@@ -7,6 +7,8 @@
  
 ## Download
 
+- [Android Frameworks源码](https://github.com/JackyWu15/AndroidFrameworksSourceCode-master)
+
 - [<<Android源码设计模式解析与实战>>](https://pan.baidu.com/s/1mEa9uj62tHRqehqJTjBPNg)
   
-- [Android Frameworks源码](https://github.com/JackyWu15/AndroidFrameworksSourceCode-master)
+
