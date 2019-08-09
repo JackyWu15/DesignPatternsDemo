@@ -2,6 +2,11 @@ package com.hechuangwu.designpatternsdemo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+
+import com.hechuangwu.designpatternsdemo.strategy.BusStrategy;
+import com.hechuangwu.designpatternsdemo.strategy.SubwayStrategy;
+import com.hechuangwu.designpatternsdemo.strategy.TranficCalculator;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -53,7 +58,31 @@ public class MainActivity extends AppCompatActivity {
 //        Log.i( TAG, "designTest: " + LoginSession.getInstance().getLoginSessionUser() );//User{age=22, name='JackyWu', phoneNum='null', address=Address{city='深圳市', district='南山区', street='学府路'}}
 
 
+        //简单工厂模式
+//        AudiQ3 audiCarQ3 = AudiCarFactory.createAudiCar( AudiQ3.class );
+//        audiCarQ3.drive();
+//        audiCarQ3.selfNavigation();
+//        AudiQ5 audiCarQ5 = AudiCarFactory.createAudiCar( AudiQ5.class );
+//        audiCarQ5.drive();
+//        audiCarQ5.selfNavigation();
 
+        //抽象工厂模式
+//        CarFactory factoryQ3 = new Q3Factory();
+//        factoryQ3.createIEngine().engine();
+//        factoryQ3.createITire().tire();
+//
+//        CarFactory factoryQ7 = new Q7Factory();
+//        factoryQ7.createIEngine().engine();
+//        factoryQ7.createITire().tire();
 
+        //策略模式
+        TranficCalculator tranficCalculator = new TranficCalculator();
+        tranficCalculator.setStrategy( new BusStrategy() );
+        int busPrice = tranficCalculator.calculatePrice( 5 );
+        Log.i( TAG, "designTest:>>> "+busPrice );
+
+        tranficCalculator.setStrategy( new SubwayStrategy() );
+        int subPrice = tranficCalculator.calculatePrice( 5 );
+        Log.i( TAG, "designTest:>>> "+subPrice );
     }
 }

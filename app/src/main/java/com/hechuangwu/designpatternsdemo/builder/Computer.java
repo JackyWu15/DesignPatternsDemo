@@ -3,7 +3,7 @@ package com.hechuangwu.designpatternsdemo.builder;
 /**
  *  Builder:建造者模式
  *  将构造过程和部件对象隔离开来，使得部件和构造过程本身都可以自由扩展，降低了解耦性
- *  其中，builder用于限定构造过程，product(Computer)用于限定部件对象，Director用于整合builder和product
+ *  builder用于限定构造过程，product(Computer)用于限定部件对象，Director用于整合builder和product
  *  实际开发中，会省略Director，直接在builder中实现链式调用
  *
  *  android源码中的建造者模式：可查看new AlertDialog.Builder( Context context).setTitle( "title" ).setIcon( R.mipmap.ic_launcher ).create().show()的调用过程

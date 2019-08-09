@@ -21,7 +21,7 @@ public class LoginSession {
     }
 
     //限制非包级别修改用户信息，只能通过此方法修改用户信息
-    protected void setLoginSessionUser(User user){
+    void setLoginSessionUser(User user){
         this.mUser = user;
     }
 
