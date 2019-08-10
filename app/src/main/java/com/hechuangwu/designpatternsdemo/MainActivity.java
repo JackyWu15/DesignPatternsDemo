@@ -93,7 +93,11 @@ public class MainActivity extends AppCompatActivity {
 //        LoginContext instance = LoginContext.getInstance();
 //        instance.forward( this );
 
-
+        //责任链模式
+//        Manager manager = new Manager();
+//        Boss boss = new Boss();
+//        manager.nextHandler = boss;
+//        manager.handleRequest( 30000 );
 
     }
 }
