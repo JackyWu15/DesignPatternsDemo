@@ -1,7 +1,7 @@
 package com.hechuangwu.designpatternsdemo.factory;
 /**
  *  简单工厂模式：
- *  生成任何复杂对象时都可以使用工厂方法
+ *  生成任何复杂对象时都可以使用工厂方法，设计理念强调的是构造对象
  *
  *  android源码中的普通工厂模式：源码中很多地方都使用了普通工厂模式，比如setContentView(new RelativeLayout())就是普通工厂模式的调用，返回给frameworks处理
  */

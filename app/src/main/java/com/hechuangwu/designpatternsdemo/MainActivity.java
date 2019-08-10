@@ -2,11 +2,6 @@ package com.hechuangwu.designpatternsdemo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-
-import com.hechuangwu.designpatternsdemo.strategy.BusStrategy;
-import com.hechuangwu.designpatternsdemo.strategy.SubwayStrategy;
-import com.hechuangwu.designpatternsdemo.strategy.TranficCalculator;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -45,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         //
         //        wordDocument.showDocument();
 
-        //原型模式2:
+        //原型模式2
 //        LoginImpl login = new LoginImpl();
 //        login.login();//登录获取用户信息，同时保存用户会话信息
 //
@@ -66,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 //        audiCarQ5.drive();
 //        audiCarQ5.selfNavigation();
 
-        //抽象工厂模式
+//        抽象工厂模式
 //        CarFactory factoryQ3 = new Q3Factory();
 //        factoryQ3.createIEngine().engine();
 //        factoryQ3.createITire().tire();
@@ -76,13 +71,29 @@ public class MainActivity extends AppCompatActivity {
 //        factoryQ7.createITire().tire();
 
         //策略模式
-        TranficCalculator tranficCalculator = new TranficCalculator();
-        tranficCalculator.setStrategy( new BusStrategy() );
-        int busPrice = tranficCalculator.calculatePrice( 5 );
-        Log.i( TAG, "designTest:>>> "+busPrice );
+//        TransCalculator transCalculator = new TransCalculator();
+//        transCalculator.setStrategy( BusStrategy.class );
+//        int busPrice = transCalculator.calculatePrice( 5 );//15
+//
+//        transCalculator.setStrategy( SubwayStrategy.class);
+//        int subPrice = transCalculator.calculatePrice( 5 );//25
 
-        tranficCalculator.setStrategy( new SubwayStrategy() );
-        int subPrice = tranficCalculator.calculatePrice( 5 );
-        Log.i( TAG, "designTest:>>> "+subPrice );
+
+        //状态模式1
+//        TvController tvController = new TvController();
+//        tvController.powerOn();
+//        tvController.nextChannel();
+//        tvController.prevChannel();
+//        tvController.turnUp();
+//
+//        tvController.powerOff();
+//        tvController.turnDown();
+
+        //状态模式2
+//        LoginContext instance = LoginContext.getInstance();
+//        instance.forward( this );
+
+
+
     }
 }

@@ -1,4 +1,4 @@
-package com.hechuangwu.designpatternsdemo.prototype;
+package com.hechuangwu.designpatternsdemo.prototype.two;
 
 /**
  * Created by cwh on 2019/8/8 0008.

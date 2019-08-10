@@ -1,4 +1,4 @@
-package com.hechuangwu.designpatternsdemo.prototype;
+package com.hechuangwu.designpatternsdemo.prototype.one;
 
 /**
  * prototype:原型模式
