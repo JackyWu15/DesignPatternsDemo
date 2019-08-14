@@ -44,8 +44,11 @@ public class LazySingleton {
     //    2，调用LazySingleton构造函数，初始化成员字段
     //    3，将mLazySingleton对象指向分配的内存空间
     //2和3步骤调用顺序是不确定的，当a线程执行了3而未执行2,此时线程b将直接使用mLazySingleton，会产生报错
-    //解决JDK1.5后加volatile:
-    //  private volatile static LazySingleton mLazySingleton ;每次都从主存中获取，但会牺牲点性能
+    //解决方案是，
+    //  private volatile static LazySingleton mLazySingleton ;
+    //  1,JDK1.5后加volatile:1,禁用乱序操作;
+    //  2,每次使用前，都从主存中重新获取；
+    //  总体会牺牲点性能
     //-----------------------------------------------------------------------------------------//
 //    public  static LazySingleton getInstance(){
 //        if(mLazySingleton==null){

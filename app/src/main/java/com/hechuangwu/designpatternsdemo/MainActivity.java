@@ -3,6 +3,9 @@ package com.hechuangwu.designpatternsdemo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.hechuangwu.designpatternsdemo.observer.Coder;
+import com.hechuangwu.designpatternsdemo.observer.DevTechFrontier;
+
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -98,6 +101,19 @@ public class MainActivity extends AppCompatActivity {
 //        Boss boss = new Boss();
 //        manager.nextHandler = boss;
 //        manager.handleRequest( 30000 );
+
+        //命令模式
+//        startActivity( new Intent( this, DrawActivity.class ) );
+
+
+        //观察者模式
+        DevTechFrontier devTechFrontier = new DevTechFrontier();
+        Coder jacky = new Coder( "jacky" );
+        Coder jacky_wu = new Coder( "jacky_wu" );
+        devTechFrontier.addObserver( jacky );
+        devTechFrontier.addObserver( jacky_wu );
+        devTechFrontier.postNewPublication( "新的周刊发布了。。。" );
+
 
     }
 }

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <com.hechuangwu.designpatternsdemo.command.DrawCanvas
+        android:id="@+id/dc_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="red"
+        android:text="红色"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="green"
+        android:text="绿色"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="normal"
+        android:text="普通画笔"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="circle"
+        android:text="圆画笔"
+        />
+    <Button
+        android:id="@+id/bt_undo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="undo"
+        android:text="撤销"
+        />
+    <Button
+        android:id="@+id/bt_redo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="redo"
+        android:text="重做"
+        />
+</LinearLayout>

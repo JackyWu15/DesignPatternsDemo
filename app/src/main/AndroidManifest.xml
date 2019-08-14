@@ -11,6 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".state.two.LoginActivity">
         </activity>
+        <activity android:name=".command.DrawActivity">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
