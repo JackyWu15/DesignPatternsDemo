@@ -3,9 +3,6 @@ package com.hechuangwu.designpatternsdemo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.hechuangwu.designpatternsdemo.observer.Coder;
-import com.hechuangwu.designpatternsdemo.observer.DevTechFrontier;
-
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -107,13 +104,45 @@ public class MainActivity extends AppCompatActivity {
 
 
         //观察者模式
-        DevTechFrontier devTechFrontier = new DevTechFrontier();
-        Coder jacky = new Coder( "jacky" );
-        Coder jacky_wu = new Coder( "jacky_wu" );
-        devTechFrontier.addObserver( jacky );
-        devTechFrontier.addObserver( jacky_wu );
-        devTechFrontier.postNewPublication( "新的周刊发布了。。。" );
+//        DevTechFrontier devTechFrontier = new DevTechFrontier();
+//        Coder jacky = new Coder( "jacky" );
+//        Coder jacky_wu = new Coder( "jacky_wu" );
+//        devTechFrontier.addObserver( jacky );
+//        devTechFrontier.addObserver( jacky_wu );
+//        devTechFrontier.postNewPublication( "新的周刊发布了。。。" );
+
+        //备忘录模式
+//        CallOfDuty callOfDuty = new CallOfDuty();
+//        callOfDuty.play();
+//
+//        Caretaker caretaker = new Caretaker();
+//        caretaker.archive( callOfDuty.createMemoto() );
+//        callOfDuty.quit();
+//
+//        CallOfDuty callOfDuty1 = new CallOfDuty();
+//        callOfDuty1.restore( caretaker.getMemo() );
 
 
+        //迭代器模式
+//        check( new CompanyMin() );
+//        check( new CompanyHui() );
+
+        //模板模式
+//        AbstractComputer coderComputer = new CoderComputer();
+//        coderComputer.startUp();
+//
+//        coderComputer = new MilitaryComputer();
+//        coderComputer.startUp();
     }
+
+
+
+
+//    private void check(Company companyMin) {
+//        Iterator iterator = companyMin.iterator();
+//        while (iterator.hasNext()){
+//            Log.i( TAG, "designTest:>>>"+iterator.next().toString() );
+//        }
+//    }
+
 }
