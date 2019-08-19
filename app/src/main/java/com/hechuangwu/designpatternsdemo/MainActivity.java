@@ -133,6 +133,49 @@ public class MainActivity extends AppCompatActivity {
 //
 //        coderComputer = new MilitaryComputer();
 //        coderComputer.startUp();
+
+
+        //访问者模式
+//        BusinessReport businessReport = new BusinessReport();
+//        businessReport.showReport( new CEOVisitor() );
+//        businessReport.showReport( new CTOVisitor() );
+
+        //中介者模式
+//        MainBoard mainBoard = new MainBoard();
+//        CDDevice cdDevice = new CDDevice( mainBoard );
+//        CPU cpu = new CPU( mainBoard );
+//        GraphicsCard graphicsCard = new GraphicsCard( mainBoard );
+//        SoundCard soundCard = new SoundCard( mainBoard );
+//        mainBoard.setCDDevice( cdDevice );
+//        mainBoard.setCPU( cpu );
+//        mainBoard.setGraphicsCard( graphicsCard );
+//        mainBoard.setSoundCard( soundCard );
+//
+//        cdDevice.load();
+
+
+        //静态代理模式
+//        ILawsuit xiaoMin1 = new XiaoMin();
+//        Lawyer lawyer = new Lawyer( xiaoMin1 );
+//        lawyer.submit();
+//        lawyer.burden();
+//        lawyer.defend();
+//        lawyer.finish();
+
+
+        //动态代理模式
+//        ILawsuit xiaoMin = new XiaoMin();
+//        DynamicProxy dynamicProxy = new DynamicProxy( xiaoMin );
+//        ClassLoader classLoader = xiaoMin.getClass().getClassLoader();
+//        ILawsuit lawsuit = (ILawsuit) Proxy.newProxyInstance( classLoader, new Class[]{ILawsuit.class}, dynamicProxy );
+//
+//        lawsuit.submit();
+//        lawsuit.burden();
+//        lawsuit.defend();
+//        lawsuit.finish();
+
+
+
     }
 
 
