@@ -17,6 +17,7 @@ public class TransCalculator {
     //不同交通工具有不同的计算方式
     public void setStrategy(Class clz){
         this.mCalculateStrategy = CalculateStrategyFactory.createCalculateStrategy( clz );
+
     }
 
     public int calculatePrice(int km){

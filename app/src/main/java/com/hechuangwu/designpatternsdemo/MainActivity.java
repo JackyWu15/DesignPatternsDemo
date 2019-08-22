@@ -174,6 +174,30 @@ public class MainActivity extends AppCompatActivity {
 //        lawsuit.defend();
 //        lawsuit.finish();
 
+        //组合模式
+//        Composite root = new Composite( "Root" );
+//        Composite branch1 = new Composite( "Branch1" );
+//        Composite branch2 = new Composite( "Branch2" );
+//
+//        Leaf leaf1 = new Leaf( "Leaf1" );
+//        Leaf leaf2 = new Leaf( "Leaf2" );
+//
+//        branch1.addChild( leaf1 );
+//        branch1.addChild( leaf2 );
+//
+//        root.addChild( branch1 );
+//        root.addChild( branch2 );
+
+//        root.doSomething();
+
+
+//        //适配器模式1
+//        VoltAdapter voltAdapter = new VoltAdapter( new Volt220() );
+//        Log.i( TAG, "designTest:>>>输出5伏电压"+voltAdapter.getVolt5());
+
+        //适配器模式2
+//        startActivity( new Intent( this, CircleMenuActivity.class ) );
+
 
 
     }
