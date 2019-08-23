@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
@@ -197,6 +196,24 @@ public class MainActivity extends AppCompatActivity {
 
         //适配器模式2
 //        startActivity( new Intent( this, CircleMenuActivity.class ) );
+
+
+        //装饰者模式
+//        Person boy = new Boy();
+//        CheapCloth cheapCloth = new CheapCloth( boy );
+//        cheapCloth.dressed();
+//
+//        ExpensiveCloth expensiveCloth = new ExpensiveCloth( boy );
+//        expensiveCloth.dressed();
+
+        //享元模式
+//        Ticket ticket = TicketFactory.getTicket( "北京", "青岛" );
+//        ticket.showTicketInfo( "上铺" );
+//        Ticket ticket1 = TicketFactory.getTicket( "北京", "青岛" );
+//        ticket1.showTicketInfo( "下铺" );
+//        Ticket ticket2 = TicketFactory.getTicket( "北京", "青岛" );
+//        ticket2.showTicketInfo( "卧铺" );
+
 
 
 
