@@ -215,6 +215,22 @@ public class MainActivity extends AppCompatActivity {
 //        ticket2.showTicketInfo( "卧铺" );
 
 
+        //外观模式
+//        MobilePhone mobilePhone = new MobilePhone();
+//        mobilePhone.call();
+//        mobilePhone.hangup();
+//        mobilePhone.takePicture();
+
+
+        //桥接模式
+//        Ordinary ordinary = new Ordinary();
+//        Sugar sugar = new Sugar();
+//
+//        LargeCoffee largeCoffee = new LargeCoffee( ordinary );
+//        largeCoffee.makeCoffee();
+//
+//        SmallCoffee smallCoffee = new SmallCoffee( sugar );
+//        smallCoffee.makeCoffee();
 
 
     }
