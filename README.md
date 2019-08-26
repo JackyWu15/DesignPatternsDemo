@@ -4,13 +4,13 @@
 
 - 每个设计模式在Android Frameworks的源码设计中都有具体的使用，通过查看分析源码，有利于加深对设计模式的理解，Demo在每个模式的开头，都标注了源码对应使用的场景。
 
-- 如果看书觉得比较枯燥或难以理解，可以观看分享的一套视频，但还是比较建议看书，以自己的方式去理解。
+- 如果觉得看书比较枯燥或难以理解，可以观看这里分享的一套视频，但还是比较建议看书，并以自己的方式去理解和应用。
  
  
 ## Download
 
 - [Android Frameworks源码](https://github.com/JackyWu15/AndroidFrameworksSourceCode-master)
 
-- [<<Android源码设计模式解析与实战>>](https://pan.baidu.com/s/1mEa9uj62tHRqehqJTjBPNg)
+- [《Android源码设计模式解析与实战》](https://pan.baidu.com/s/1mEa9uj62tHRqehqJTjBPNg)
   
-- [设计模式视频](https://pan.baidu.com/s/1FIawtw5ypNil5muIRqycNQ)
+- [设计模式视频讲解](https://pan.baidu.com/s/1FIawtw5ypNil5muIRqycNQ)
